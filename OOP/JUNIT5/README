@@ -1,0 +1,57 @@
+
+
+SDLC ==> Software Development Life Cycle
+SDLC is a process used for planning, designing, creating, testing, and delivering a software product
+SDLC is a framework that helps to manage and control the software development process
+SDLC is a methodology that provides a structured approach to software development
+SDLC is a process that helps to ensure that the software product meets the required quality and functionality standards
+
+NOTE: This "TESTING" is Different from "UNIT TESTING"
+
+UNIT ==> One unit can be Method or a particular block of code
+UNIT TESTING ==> Testing of a single unit of code, typically a method, agroup of classes or a function, to ensure it behaves as expected.
+
+
+ UNIT TESTING FRAMEWORK...
+
+
+
+  STEPTS FOR MANUAL TESTIN...STEPS MAY VARY FOR EVERY UNIT
+1 - PREPARE (prepare a test enviornment, write test methods);
+2 - PROVIDE TESTING  INPUT
+3 - EXECUTE THE TEST
+4 - COMPARE THE EXPECTED RESULT WITH THE ACTUAL RESULT
+5 - PERFORM ASSERTION (VERIFY THE RESULT)
+6 - REPORT THE RESULT
+
+
+
+
+
+
+
+
+JUnit 5 is the latest version of the JUnit testing framework, designed for Java applications. It provides powerful testing features, better modularity, and support for modern Java versions.
+
+1. JUnit 5 Architecture
+JUnit 5 consists of three main components:
+
+JUnit Platform → Provides a foundation to run tests on various frameworks (e.g., JUnit 4, JUnit 5, TestNG).
+JUnit Jupiter → The new programming model with modern annotations and features.
+JUnit Vintage → Provides backward compatibility for JUnit 4 and 3.
+
+
+
+3. JUnit 5 Annotations
+JUnit 5 introduces modern annotations for better test writing.
+
+Annotation	Description
+@Test	Marks a method as a test case.
+@BeforeEach	Runs before each test method (like @Before in JUnit 4).
+@AfterEach	Runs after each test method (like @After in JUnit 4).
+@BeforeAll	Runs once before all test methods (like @BeforeClass).
+@AfterAll	Runs once after all test methods (like @AfterClass).
+@DisplayName	Custom name for test methods.
+@Disabled	Skips a test method.
+@ParameterizedTest	Runs the same test multiple times with different inputs.
+@Nested	Used for grouping tests in nested classes.

@@ -5,9 +5,13 @@ public class LooseCouplingExample {
     
    public static void main(String[] args) {
 
-    UserDataProvider databaseProvider = new UserDatabaseProvider();
+    UserDataProvider databaseProvider = new UserDatabaseProvider();      //You can do this ONLY IF the class(UserDatabaseProvider) implements the interface(UserDataProvider): The reference type is interface and The object type is the concrete class.
     UserManager userManagerWithDB = new UserManager(databaseProvider);
     System.out.println(userManagerWithDB.getUserInfo());
+
+    UserDataProvider webServiceProvider = new WebServiceDataProvider();
+    UserManager userManagerWithWS = new UserManager(webServiceProvider);
+    System.out.println(userManagerWithWS.getUserInfo());
 
    }
 

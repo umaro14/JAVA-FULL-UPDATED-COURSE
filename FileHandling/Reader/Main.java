@@ -13,10 +13,10 @@ public class Main {
 
             // Read one character at a time from the file
             int data = reader.read();
-            while (data != -1) {
+            while (data != -1) {                                       //-1 → no more data to read EOF(end of file)
               
                 // Convert the int to char and print
-                System.out.print((char)data);
+                System.out.print((char)data);                          //Ex: int 65 → char 'A'
                 data = reader.read();
             }
 
